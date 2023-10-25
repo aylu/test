@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title> Formulaires - Form </title>
+</head>
+
+<body>
+	<h1>Commande de pizzas</h1>
+	
+	<form method="post" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+	<fieldset><legend> Garniture</legend>
+	<label><input name="garniture" type="checkbox" value="ch">
+	Fromage</label>
+	<label><input name="garniture" type="checkbox" value="ol">
+	Olives</label>
+	<label><input name="garniture" type="checkbox" value="mu">
+	Champignons</label>
+	</fieldset>
+	
+	<fieldset><legend> Taille</legend>
+	<label><input name="taille" type="radio" value="s">
+	Petite</label>
+	<label><input name="taille" type="radio" value="m">
+	Moyenne</label>
+	<label><input name="taille" type="radio" value="l">
+	Grande</label>
+	</fieldset>
+
+	<fieldset><legend>Base</legend>
+		<label>Votre Base</label>
+		<select name="base" id="base">
+			<option value="creme">Creme</option>
+			<option value="tomate">Tomate</option>
+		</select>
+	</fieldset>
+
+	<fieldset><legend>Commentaire</legend>
+		<label><input name="Commentaire" type="text"><input></label>
+	</fieldset>
+	
+	<button type="submit">envoyer au serveur</button>
+	</form>
+
+	
+</body>
+</html>
